@@ -1,6 +1,6 @@
 package com.springudemycourse.spring5quotesapp.services;
 
-import guru.springframework.norris.chuck.ChuckNorrisQuotes;
+import com.springudemycourse.spring5quotesapp.utils.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +14,6 @@ public class QuoteServiceImpl implements QuoteService {
 
     @Override
     public String getQuote() {
-        return null;
+        return chuckNorrisQuotes.getRandomQuote();
     }
 }
